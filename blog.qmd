@@ -9,72 +9,39 @@ Welcome to my blog! Here I share my thoughts, research notes, and insights on ph
 
 ## Recent Posts
 
-### 如何在博客中嵌入 PDF
+### [示例博客文章：损伤力学基础](example-blog-post.html)
 
-如果你想在博客中直接显示 PDF 文件（而不是 Markdown），可以按照以下步骤：
+**📅 Published:** 2025-01-15
 
-1. **上传 PDF 文件**：将 PDF 文件放到项目的 `docs/` 或 `images/` 文件夹中
-2. **在博客中使用 HTML 嵌入**：使用以下代码嵌入 PDF
+这是一篇关于损伤力学的学习笔记。我将相关的 PDF 文档直接嵌入到博客中，方便在线阅读。
 
-#### 方法 1：使用 iframe（推荐）
-
-```html
-<iframe src="path/to/your/file.pdf" width="100%" height="600px" style="border: 1px solid #ccc;">
-  <p>Your browser does not support PDFs. 
-  <a href="path/to/your/file.pdf">Download the PDF</a> instead.</p>
-</iframe>
-```
-
-#### 方法 2：使用 embed 标签
-
-```html
-<embed src="path/to/your/file.pdf" type="application/pdf" width="100%" height="600px" />
-```
-
-#### 方法 3：使用 object 标签
-
-```html
-<object data="path/to/your/file.pdf" type="application/pdf" width="100%" height="600px">
-  <p>Unable to display PDF file. <a href="path/to/your/file.pdf">Download</a> instead.</p>
-</object>
-```
-
-### 实际示例：嵌入 PDF 文件
-
-下面是一个实际的 PDF 嵌入示例（使用 CV.pdf）：
-
-```{=html}
-<iframe src="pdfs/CV.pdf" width="100%" height="800px" style="border: 1px solid #ddd; border-radius: 5px; margin: 20px 0;">
-  <p>无法显示 PDF。请<a href="pdfs/CV.pdf" target="_blank">点击这里下载</a>。</p>
-</iframe>
-```
-
-**说明**：
-- PDF 文件路径：`pdfs/CV.pdf`（相对于 `docs/` 文件夹）
-- 宽度设置为 `100%` 以适应页面宽度
-- 高度设置为 `800px`，你可以根据需要调整
-- 添加了边框和圆角样式，使显示更美观
-
-### 其他显示方式
-
-#### 方式 2：提供下载链接
-
-[下载我的简历 PDF](pdfs/CV.pdf){target="_blank"}
-
-#### 方式 3：在新窗口中打开
-
-<a href="pdfs/CV.pdf" target="_blank" class="btn btn-primary">在新窗口中查看 PDF</a>
+[阅读全文 →](example-blog-post.html)
 
 ---
 
-## 添加新的博客文章
+## 如何添加新的博客文章
 
 当你想要添加新的博客文章时：
 
 1. **创建新的 `.qmd` 文件**，例如 `my-blog-post.qmd`
-2. **将 PDF 文件放到 `docs/pdfs/` 文件夹**
-3. **在文章中使用上面的代码嵌入 PDF**
-4. **运行 `quarto render` 生成 HTML**
-5. **提交并推送到 GitHub**
+2. **在文件头部添加元数据**：
+   ```yaml
+   ---
+   title: "你的文章标题"
+   date: 2025-01-XX
+   ---
+   ```
+3. **将 PDF 文件放到 `docs/pdfs/` 文件夹**（如果需要）
+4. **在文章中使用 iframe 嵌入 PDF**：
+   ```{=html}
+   <iframe src="pdfs/your-file.pdf" width="100%" height="800px" style="border: 1px solid #ddd; border-radius: 5px;">
+     <p>无法显示 PDF。请<a href="pdfs/your-file.pdf">点击下载</a>。</p>
+   </iframe>
+   ```
+5. **在 `blog.qmd` 中添加文章条目**（如上所示）
+6. **运行 `quarto render` 生成 HTML**
+7. **提交并推送到 GitHub**
 
-*Your blog posts will appear here.*
+---
+
+*更多博客文章将在这里显示...*

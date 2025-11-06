@@ -121,16 +121,16 @@
   {
     "objectID": "blog.html",
     "href": "blog.html",
-    "title": "示例博客文章：损伤力学基础",
+    "title": "Blog",
     "section": "",
     "text": "Welcome to my blog! Here I share my thoughts, research notes, and insights on physics, damage mechanics, continuum mechanics, and rational mechanics."
   },
   {
     "objectID": "blog.html#recent-posts",
     "href": "blog.html#recent-posts",
-    "title": "示例博客文章：损伤力学基础",
+    "title": "Blog",
     "section": "Recent Posts",
-    "text": "Recent Posts\n\n如何在博客中嵌入 PDF\n如果你想在博客中直接显示 PDF 文件（而不是 Markdown），可以按照以下步骤：\n\n上传 PDF 文件：将 PDF 文件放到项目的 docs/ 或 images/ 文件夹中\n在博客中使用 HTML 嵌入：使用以下代码嵌入 PDF\n\n\n方法 1：使用 iframe（推荐）\n&lt;iframe src=\"path/to/your/file.pdf\" width=\"100%\" height=\"600px\" style=\"border: 1px solid #ccc;\"&gt;\n  &lt;p&gt;Your browser does not support PDFs. \n  &lt;a href=\"path/to/your/file.pdf\"&gt;Download the PDF&lt;/a&gt; instead.&lt;/p&gt;\n&lt;/iframe&gt;\n\n\n方法 2：使用 embed 标签\n&lt;embed src=\"path/to/your/file.pdf\" type=\"application/pdf\" width=\"100%\" height=\"600px\" /&gt;\n\n\n方法 3：使用 object 标签\n&lt;object data=\"path/to/your/file.pdf\" type=\"application/pdf\" width=\"100%\" height=\"600px\"&gt;\n  &lt;p&gt;Unable to display PDF file. &lt;a href=\"path/to/your/file.pdf\"&gt;Download&lt;/a&gt; instead.&lt;/p&gt;\n&lt;/object&gt;\n\n\n\n实际示例：嵌入 PDF 文件\n下面是一个实际的 PDF 嵌入示例（使用 CV.pdf）：\n\n  &lt;p&gt;无法显示 PDF。请&lt;a href=\"pdfs/CV.pdf\" target=\"_blank\"&gt;点击这里下载&lt;/a&gt;。&lt;/p&gt;\n\n说明： - PDF 文件路径：pdfs/CV.pdf（相对于 docs/ 文件夹） - 宽度设置为 100% 以适应页面宽度 - 高度设置为 800px，你可以根据需要调整 - 添加了边框和圆角样式，使显示更美观\n\n\n其他显示方式\n\n方式 2：提供下载链接\n下载我的简历 PDF\n\n\n方式 3：在新窗口中打开\n在新窗口中查看 PDF"
+    "text": "Recent Posts\n\n示例博客文章：损伤力学基础\n📅 Published: 2025-01-15\n这是一篇关于损伤力学的学习笔记。我将相关的 PDF 文档直接嵌入到博客中，方便在线阅读。\n阅读全文 →"
   },
   {
     "objectID": "blog.html#添加新的博客文章",
@@ -292,5 +292,12 @@
     "title": "示例博客文章：损伤力学基础",
     "section": "补充说明",
     "text": "补充说明\n你可以在这里添加对 PDF 内容的说明、摘要或其他相关信息。\n\n主要内容\n\n损伤变量的定义\n本构关系的建立\n数值模拟方法\n\n\n\n相关资源\n\n下载 PDF 文档\n更多学习资源…"
+  },
+  {
+    "objectID": "blog.html#如何添加新的博客文章",
+    "href": "blog.html#如何添加新的博客文章",
+    "title": "Blog",
+    "section": "如何添加新的博客文章",
+    "text": "如何添加新的博客文章\n当你想要添加新的博客文章时：\n\n创建新的 .qmd 文件，例如 my-blog-post.qmd\n在文件头部添加元数据：\n---\ntitle: \"你的文章标题\"\ndate: 2025-01-XX\n---\n将 PDF 文件放到 docs/pdfs/ 文件夹（如果需要）\n在文章中使用 iframe 嵌入 PDF：\n\n  &lt;p&gt;无法显示 PDF。请&lt;a href=\"pdfs/your-file.pdf\"&gt;点击下载&lt;/a&gt;。&lt;/p&gt;\n\n在 blog.qmd 中添加文章条目（如上所示）\n运行 quarto render 生成 HTML\n提交并推送到 GitHub\n\n\n更多博客文章将在这里显示…"
   }
 ]
