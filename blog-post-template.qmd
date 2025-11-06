@@ -1,0 +1,33 @@
+---
+title: "博客文章标题"
+date: 2025-01-XX
+---
+
+## 文章简介
+
+这里是文章的简介或摘要。
+
+## PDF 文档
+
+如果你想直接显示 PDF 文件，可以使用以下方式：
+
+### 方式 1：嵌入式显示（在页面中直接查看）
+
+```{=html}
+<iframe src="pdfs/your-document.pdf" width="100%" height="800px" style="border: 1px solid #ddd; border-radius: 5px; margin: 20px 0;">
+  <p>无法显示 PDF 文件。请<a href="pdfs/your-document.pdf" target="_blank">点击这里下载</a>。</p>
+</iframe>
+```
+
+### 方式 2：提供下载链接
+
+[下载 PDF 文档](pdfs/your-document.pdf){target="_blank"}
+
+### 方式 3：在新窗口中打开
+
+<a href="pdfs/your-document.pdf" target="_blank">在新窗口中查看 PDF</a>
+
+## 补充说明
+
+你可以在这里添加对 PDF 内容的说明、摘要或其他相关信息。
+

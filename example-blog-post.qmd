@@ -1,0 +1,34 @@
+---
+title: "示例博客文章：损伤力学基础"
+date: 2025-01-15
+---
+
+## 文章简介
+
+这是一篇关于损伤力学的学习笔记。我将相关的 PDF 文档直接嵌入到博客中，方便在线阅读。
+
+## PDF 文档
+
+以下是我的学习笔记 PDF，你可以直接在页面中查看：
+
+```{=html}
+<iframe src="pdfs/CV.pdf" width="100%" height="800px" style="border: 1px solid #ddd; border-radius: 5px; margin: 20px 0;">
+  <p>无法显示 PDF。请<a href="pdfs/CV.pdf" target="_blank">点击这里下载</a>。</p>
+</iframe>
+```
+
+## 补充说明
+
+你可以在这里添加对 PDF 内容的说明、摘要或其他相关信息。
+
+### 主要内容
+
+- 损伤变量的定义
+- 本构关系的建立
+- 数值模拟方法
+
+### 相关资源
+
+- [下载 PDF 文档](pdfs/CV.pdf){target="_blank"}
+- 更多学习资源...
+
